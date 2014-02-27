@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    font-size: 100%;
+    font: inherit;
+    background: transparent;
+}
+
+    /** COLORS **/
+    /**
+    rgb(250, 170, 100); orange
+    rgb(35, 149, 173); dark blue
+    rgb(100, 224, 250); light blue
+    **/
+
+body {
+}
+
+article {
+    background-color: rgb(255, 255, 255);
+    height: 0;
+}
+
+.top_content {
+    height: 100%;
+    padding-bottom: 80%;
+}
+
+/** Figure out how to make the top content height responsive to the browser window **/
+
+
+
+.center_content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#top {
+    font-family: "Questrial", Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    color: rgb(125, 250, 135);
+    padding-top: 250px;
+    text-shadow: 1px 1px 2px #b0b0b0;
+    letter-spacing: -7px;
+    text-align: center;
+}
+
+#subtext {
+    font-family: "Comfortaa", Verdana, sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#right {
+    font-family: "Pacifico", Verdana, sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#seperator {
+    border: 3px dotted #d0d0d0;
+    width: 40%;
+    margin: 30px auto;
+}
+
+.main_content {
+    width: inherit;
+    height: 1000px;
+    background-color: rgb(250, 170, 100);
+}
+
+#left1 {
+    width: 50%;
+    height: 500px;
+    float: left;
+    background-color: #ddd;
+}
+
+#right1 {
+    width: 50%;
+    height: 500px;
+    float: right;
+    background-color: #999;
+}
+
+#left1:hover {background-color: rgb(35, 149, 173);}
+
+#right1:hover {background-color: rgb(100, 224, 250);}
