@@ -25,8 +25,9 @@ article {
 }
 
 .top_content {
-    height: 100%;
-    padding-bottom: 80%;
+    width: 100%;
+    height: auto;
+    padding-bottom: 100%;
 }
 
 /** Figure out how to make the top content height responsive to the browser window **/
