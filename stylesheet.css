@@ -27,7 +27,7 @@ article {
 .top_content {
     width: 100%;
     height: auto;
-    padding-bottom: 100%;
+    padding-bottom: ;
 }
 
 /** Figure out how to make the top content height responsive to the browser window **/
@@ -70,9 +70,17 @@ article {
     margin: 30px auto;
 }
 
+button {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Comfortaa", Verdana, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+}
+
 .main_content {
     width: inherit;
-    height: 1000px;
+    height: 100px;
     background-color: rgb(250, 170, 100);
 }
 
