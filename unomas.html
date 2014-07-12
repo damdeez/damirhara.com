@@ -3,23 +3,65 @@
 <html>
 <head>
 
-    <title>HAHAHA HEY!</title>
+    <title>Damir Harambasic // Front-end Web Developer, UX/UI Designer, Web Analyst based in Salt Lake City, Utah</title>
+
     <link href="./stylesheet.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Questrial|Comfortaa:400,700,300|Pacifico' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="./fontello/css/fontello.css">
+    <link href='http://fonts.googleapis.com/css?family=Questrial|Comfortaa:400,700,300|Pacifico|Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    
 </head>
 
 <body>
 <article>
-    <section class="top_content">
-        <div class="center_content" id="top">Damir Harambasic</div>
-        <div class="center_content" id="subtext">Hi, I like to make things and code them up. Aren't I way cool?</div>
+    <section id="top_content">
+        <img src="./files/damirsquare.jpg"></img>
+        <div class="center_content" id="headline">Hello, my name is Damir.</div>
+        <div class="center_content" id="subtext">
+              <br>I enjoy aesthetic design, clean code & how users interact with technology. I pride myself on my attention to detail & problem solving ability. I recently graduate from University of Utah with a BS in Mass Communication. My career goal is to pursue a position as a Front-end Developer, UX/UI Designer, Web Analyst or Product Manager.<br><br>Check out my 
+                <a href="#work">work</a> below and my blog <a href="http://www.damirhara.com/words/">here</a>, we can also connect on <a href="http://www.linkedin.com/in/damirharambasic">LinkedIn</a>, <a href="http://codepen.io/damdeez/">CodePen</a>, and <a href="https://github.com/damdeez">GitHub</a>.<br><br>
+        </div>       
+        <span id="contact_button">
+            <a href="mailto:damir.hara@me.com?Subject=Hello,%20I%20found%20your%20site.." class="icon-mail"> CONTACT ME</a>
+        </span>
+                
+        
         <div id="seperator"></div>
+        <div id="social">
+            <a href="http://codepen.io/damdeez" target="_blank" class="icon-codepen"></a>
+            <a href="http://www.damirhara.com/words" target="_blank" class="icon-wordpress"></a>
+            <a href="https://twitter.com/damdeez" target="_blank" class="icon-twitter"></a>
+            <a href="http://www.linkedin.com/in/damirharambasic" target="_blank" class="icon-linkedin"></a>
+            <!-- <a href="mailto:damir.hara@me.com?Subject=Hello,%20I%20found%20your%20site.." class="icon-mail"></a> -->
+        </div>    
     </section>
       
-    <section class="main_content">
-        <div class="" id="left1"></div>
-        <div class="" id="right1"></div>
+    <section id="work">
+        <div id="left1" class="cubes"></div>
+        <div id="right1" class="cubes"></div>
+        
+    </section>
+    <section id="work2">
+        <div id="left2" class="cubes"></div>
+        <div id="right2" class="cubes"></div>
     </section>
 </article>
+
+<footer>
+</footer>
+
 </body>
+
+<script type="text/javascript">
+
+   <!-- Auto resize top_content section to fit users browser -->  
+    function autoResizeSection()
+        {
+            document.getElementById('top_content').style.height = window.innerHeight +'px';
+        }
+        window.onresize = autoResizeSection;
+        autoResizeSection();
+
+
+
+</script>
 </html>
