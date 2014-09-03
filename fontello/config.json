@@ -1,0 +1,70 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "513ac180ff85bd275f2b736720cbbf5e",
+      "css": "home",
+      "code": 8962,
+      "src": "entypo"
+    },
+    {
+      "uid": "bc50457410acf467b8b5721240768742",
+      "css": "facebook",
+      "code": 62220,
+      "src": "entypo"
+    },
+    {
+      "uid": "e8d13cd05bd63219329b2b61835d776c",
+      "css": "dribbble",
+      "code": 59395,
+      "src": "entypo"
+    },
+    {
+      "uid": "84f3880057574e968053d6d6c8a7b216",
+      "css": "behance",
+      "code": 59392,
+      "src": "entypo"
+    },
+    {
+      "uid": "878dccd7b810bc231a132d86a3028afe",
+      "css": "tree-1",
+      "code": 59454,
+      "src": "maki"
+    },
+    {
+      "uid": "0636c283a9822288a767609062bbf4a4",
+      "css": "wordpress",
+      "code": 59396,
+      "src": "zocial"
+    },
+    {
+      "uid": "d611dd319d8c13b4551dc5bd85c1bdfd",
+      "css": "twitter",
+      "code": 59397,
+      "src": "brandico"
+    },
+    {
+      "uid": "542e3f055aaa4ddfb9ab3e00397db47f",
+      "css": "linkedin",
+      "code": 62234,
+      "src": "brandico"
+    },
+    {
+      "uid": "155970c9f52b23f31026bab7163caa63",
+      "css": "codepen",
+      "code": 59394,
+      "src": "brandico"
+    },
+    {
+      "uid": "91bac16b22827347e9ee20477f0b44d2",
+      "css": "mail",
+      "code": 59393,
+      "src": "linecons"
+    }
+  ]
+}
