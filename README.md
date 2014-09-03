@@ -1,4 +1,4 @@
-newportfoliosite
+newPortfolioSite
 ================
 
 New portfolio site project for www.damirhara.com
