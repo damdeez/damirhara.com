@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Damir Harambasic // Front-end Web Developer, UX/UI Designer, Web Analyst based in Salt Lake City, Utah</title>
+
+    <link href="./stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="./scriptz.js" type="text/javascript">
+    <link type="text/css" rel="stylesheet" href="./fontello/css/fontello.css">
+    <link href='http://fonts.googleapis.com/css?family=Questrial|Comfortaa:400,700,300|Pacifico|Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+
+        $(".clickforwork").click(function() {
+            var offset = 20;
+            $('html, body').animate({
+                scrollTop: $("#work").offset().top + offset
+            }, 500);
+        });
+
+        setInterval(function() {
+            $(".clickforwork").toggleClass("animated bounce");
+            //console.log('wow!');
+        }, 2000);
+
+    });
+    </script>
+</head>
+
+<body>
+    <article>
+        <section id="top_content">
+            <img src="./files/damirsquare.jpg" id="profile_pic"></img>
+            <div class="center_content" id="headline">Hello, my name is Damir.</div>
+            <div class="center_content" id="subtext">
+                  <br>I enjoy aesthetic & functional design, clean code & how users interact with technology. I pride myself on my attention to detail & problem solving ability. I recently graduate from University of Utah with a BS in Mass Communication. My career goal is to pursue a position as a Front-end Developer, UX/UI Designer, Web Analyst or Product Manager. Please contact me for career inquiries below.
+                  <br><br>
+                  You can view my 
+                    <a href="#work" class="clickforwork">work</a> below, my <a href="http://www.damirhara.com/words/" target="_blank">blog</a> and my resume <a href="./files/DamirHaraResume.pdf">here</a>, we can also connect on <a href="http://www.linkedin.com/in/damirharambasic" target="_blank">LinkedIn</a>, <a href="http://codepen.io/damdeez/" target="_blank">CodePen</a>, and <a href="https://github.com/damdeez" target="_blank">GitHub</a>.
+            </div>       
+            <div id="contact_button">
+                <a href="mailto:damir.hara@me.com?Subject=Hello,%20I%20found%20your%20site.."><span class="icon-mail"></span> CONTACT ME</a>
+            </div>
+                    
+            
+            <div id="seperator"></div>
+            <div id="social">
+                <a href="http://codepen.io/damdeez" target="_blank" class="icon-codepen"></a>
+                <a href="http://www.damirhara.com/words" target="_blank" class="icon-wordpress"></a>
+                <a href="https://twitter.com/damdeez" target="_blank" class="icon-twitter"></a>
+                <a href="http://www.linkedin.com/in/damirharambasic" target="_blank" class="icon-linkedin"></a>
+                <!-- <a href="mailto:damir.hara@me.com?Subject=Hello,%20I%20found%20your%20site" class="icon-mail"></a> -->
+            </div> 
+            <span class="clickforwork"><a id="downbutton" href="#work">work <i>&darr;</i></a></span> 
+        </section>
+          
+        <section id="work">
+            <a id="left1" class="cubes" href="#">
+                <h1>Rynet Technologies<br>---</h1>
+                <p>Rynet Technologies is an IT consulting business. I designed and developed the entire one-page site based on clients needs and wants.<br><br>Technologies used: HTML5, CSS3, jQuery</p>
+            </a>
+            <a id="right1" class="cubes" href="#">
+                <h1>RUSA.org UX/UI Project<br>---</h1>
+                <p>Usable Web Design Class re-design project. Created over a 4 month period.<br><br>Project involved user research, user testing, personas, story-boarding, information architecture, heuristics, wireframing, & visual design.</p>
+            </a>
+        </section>
+        <section id="work2">
+            <a id="left2" class="cubes" href="#">
+                <h1>Three Rivers Website<br>---</h1>
+                <p>Web Dev class project. Handled the HTML5, CSS3, & jQuery based on a style guide from the Designer.<br><br>Project started with planning, brainstorming and sketching flexible grids as this was the first time I dove into Responsive Design. Super challenging!</p>
+            </a>
+            <a id="right2" class="cubes" href="#">
+                <h1>Geek Zombies Website<br>---</h1>
+                <p>Web Dev class project. Handled the HTML, CSS, & jQuery based on a .PSD file.<br><br>This was a really fun project for me since it was the first time I got to dive into jQuery. The page is meant to act as a informational site and features a fun design.</p>
+            </a>
+        </section>
+    </article>
+</body>
+
+
+<script type="text/javascript">
+    
+   // Auto resize top_content section to fit users browser 
+
+    function autoResizeSection()
+        {
+            document.getElementById('top_content').style.height = window.innerHeight +'px';
+        }
+        window.onresize = autoResizeSection;
+        autoResizeSection();   
+
+</script>
+</html>
