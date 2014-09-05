@@ -16,7 +16,7 @@
             <img src="./files/damirsquare.jpg" id="profile_pic"></img>
             <div class="center_content" id="headline">Hello, my name is Damir.</div>
             <div class="center_content" id="subtext">
-                  <br>I enjoy aesthetic & functional design, clean code & how users interact with technology. I pride myself on my attention to detail & problem solving ability. I recently graduate from University of Utah with a BS in Mass Communication. My career goal is to pursue a position as a Front-end Developer, UX/UI Designer, Web Analyst or Product Manager. Please contact me for career inquiries below.
+                  <br>I am a Front-end Developer and Web UX/UI Designer based out of Salt Lake City. I enjoy aesthetic & functional design, clean code & how users interact with technology. I specialize in WordPress theme development, Tumblr theme development, and minimalistic one-page sites.
                   <br><br>
                   You can view my 
                     <a href="#portfolio" class="click">portfolio</a> below, my <a href="http://www.damirhara.com/words/" target="_blank">blog</a> and my resume <a href="./files/DamirHaraResume.pdf">here</a>.<br>We can also connect on <a href="http://www.linkedin.com/in/damirharambasic" target="_blank">LinkedIn</a>, <a href="http://codepen.io/damdeez/" target="_blank">CodePen</a>, and <a href="https://github.com/damdeez" target="_blank">GitHub</a>.
@@ -92,30 +92,6 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <script type="text/javascript">
-        
-    // Auto resize top_content section to fit users browser 
-
-    function autoResizeSection() {
-        document.getElementById('top_content').style.height = window.innerHeight +'px';
-        }
-        window.onresize = autoResizeSection;
-            autoResizeSection();   
-            
-
-    // Smooth scroll down to #portfolio when clicked on a specified class
-
-    $(document).ready(function() {
-        $(".click").click(function() {
-            var offset = 20;
-            $('html, body').animate({
-                scrollTop: $("#portfolio").offset().top + offset
-            }, 500);
-        });
-
-    });
-
-    </script>
+    <script src="scriptz.js"></script>
 </body>
 </html>
