@@ -1,22 +1,13 @@
 Font license info
 
 
-## Entypo
+## Font Awesome
 
-   Copyright (C) 2012 by Daniel Bruce
+   Copyright (C) 2012 by Dave Gandy
 
-   Author:    Daniel Bruce
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.entypo.com
-
-
-## Linecons
-
-   Copyright (C) 2013 by Designmodo
-
-   Author:    Designmodo for Smashing Magazine
-   License:   CC BY ()
-   Homepage:  http://designmodo.com/linecons-free/
+   Author:    Dave Gandy
+   License:   SIL ()
+   Homepage:  http://fortawesome.github.com/Font-Awesome/
 
 
 ## Brandico
@@ -28,6 +19,15 @@ Font license info
    Homepage:  
 
 
+## Elusive
+
+   Copyright (C) 2013 by Aristeides Stathopoulos
+
+   Author:    Aristeides Stathopoulos
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  http://aristeides.com/
+
+
 ## Zocial
 
    Copyright (C) 2012 by Sam Collins
@@ -37,12 +37,12 @@ Font license info
    Homepage:  http://zocial.smcllns.com/
 
 
-## Maki
+## Entypo
 
-   Copyright (C) Mapbox, LCC
+   Copyright (C) 2012 by Daniel Bruce
 
-   Author:    Mapbox
-   License:   BSD (https://github.com/mapbox/maki/blob/gh-pages/LICENSE.txt)
-   Homepage:  http://mapbox.com/maki/
+   Author:    Daniel Bruce
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  http://www.entypo.com
 
 
