@@ -12,7 +12,7 @@
             autoResizeSection();   
 
 
-    // Smooth scroll down to #portfolio when clicked on a specified class
+// Smooth scroll down to #portfolio when clicked on a specified class
 
     $(document).ready(function() {
         $(".click").click(function() {
