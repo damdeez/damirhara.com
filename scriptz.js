@@ -12,14 +12,31 @@
             autoResizeSection();   
 
 
-// Smooth scroll down to #portfolio when clicked on a specified class
+// jQuery goodness
 
     $(document).ready(function() {
         $(".click").click(function() {
-            var offset = 20;
+            var offset = "";
             $('html, body').animate({
-                scrollTop: $("#portfolio").offset().top + offset
-            }, 500);
+                scrollTop: $("#portfolio").offset().top + offset}, 500);
+
         });
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 1200) {
+                $("#backtop").fadeIn(1000);
+            } else {
+                $("#backtop").fadeOut(1000);
+            }
+        });
+
+        $("#backtop").click(function() {
+            $("html, body").animate( {
+                scrollTop: 0}, 500);
+        });
+
+        setInterval(function() {
+        $("#arrowdown").toggleClass("animated bounce");
+        }, 2500);
 
     });
