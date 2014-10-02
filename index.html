@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <title>Damir Harambasic // Front-end Web Developer, UX/UI Designer, Web Analyst based in Salt Lake City, Utah</title>
 
-    <link href="./stylesheet.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="./stylesheet.css">
+    <link type="text/css" rel="stylesheet" href="./animate.css">
     <link type="text/css" rel="stylesheet" href="./fontello/css/fontello.css">
+    <script src="scriptz.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Questrial|Roboto:400,700,300|Pacifico|Open+Sans:300,400' rel='stylesheet' type='text/css'>
+
 
 </head>
 
@@ -16,10 +20,9 @@
             <img src="./files/damirsquare.jpg" id="profile_pic">
             <div class="center_content" id="headline">Hello, my name is Damir.</div>
             <div class="center_content" id="subtext">
-                  <br>I am a Jr. Web Developer and Designer based out of Salt Lake City. I enjoy aesthetic & functional design, clean code & how users interact with technology. I specialize in WordPress theme development, Tumblr theme development, and minimalistic websites. TEST!
+                  <br>I am a Web Developer and Designer based out of Salt Lake City. I enjoy aesthetic & functional design, clean code, & how users interact with technology. I specialize in WordPress, Tumblr theme development, and minimalistic websites.
                   <br><br>
-                  You can view my 
-                    <a href="#portfolio" class="click">portfolio</a> below and my resume <a href="./files/DamirHaraResume.pdf">here</a>.
+                  You can view my portfolio below and my resume <a href="./files/DamirHaraResume.pdf">here</a>.
             </div>       
             <div id="contact_button">
                 <a href="mailto:damir.hara@me.com"><span class="icon-mail"></span> CONTACT ME</a>
@@ -36,51 +39,35 @@
                 <a href="http://www.linkedin.com/in/damirharambasic" target="_blank" class="icon-linkedin"></a>
                 <!-- <a href="mailto:damir.hara@me.com" class="icon-mail"></a> -->
             </div> 
-            
+            <div id="arrowdown" class="click"><a href="#portfolio"><img src="files/arrowdown.png"></a></div>
         </section>
-    <!--  
-        <section id="work"> 
-            <a id="left1" class="cubes" href="#">
-                <h1>Rynet Technologies<br>---</h1>
-                <p>Rynet Technologies is an IT consulting business. I designed and developed the entire one-page site based on clients needs and wants.<br><br>Technologies used: HTML5, CSS3, jQuery</p>
-            </a>
-            <a id="right1" class="cubes" href="#">
-                <h1>RUSA.org UX/UI Project<br>---</h1>
-                <p>Usable Web Design Class re-design project. Created over a 4 month period.<br><br>Project involved user research, user testing, personas, story-boarding, information architecture, heuristics, wireframing, & visual design.</p>
-            </a>
-        </section>
-        <section id="work2">
-            <a id="left2" class="cubes" href="#">
-                <h1>Three Rivers Website<br>---</h1>
-                <p>Web Dev class project. Handled the HTML5, CSS3, & jQuery based on a style guide from the Designer.<br><br>Project started with planning, brainstorming and sketching flexible grids as this was the first time I dove into Responsive Design. Super challenging!</p>
-            </a>
-            <a id="right2" class="cubes" href="#">
-                <h1>Geek Zombies Website<br>---</h1>
-                <p>Web Dev class project. Handled the HTML, CSS, & jQuery based on a .PSD file.<br><br>This was a really fun project for me since it was the first time I got to dive into jQuery. The page is meant to act as a informational site and features a fun design.</p>
-            </a>
-        </section>
-    -->
+
         <section id="portfolio">
             <div class="examples" id="rynet">
                     <h1>Rynet Technologies<br>---</h1>
                     <p>Rynet Technologies is an IT consulting business. I designed and developed the entire one-page site based on clients needs and wants.<br><br>Technologies used: HTML5, CSS3, jQuery</p>
                     <img src="./files/RynetTechnologies.png" />
             </div>
-        <!--    <div class="examples" id="geekzombies">
-                    <h1>Test 1<br>---</h1>
-                    <p>Rynet Technologies is an IT consulting business. I designed and developed the entire one-page site based on clients needs and wants.<br><br>Technologies used: HTML5, CSS3, jQuery</p>
-                    <img src="./files/RynetTechnologies.png" />
+            <div class="examples" id="damirhara">
+                    <h1>damirhara.com version 1<br>---</h1>
+                    <p>Personal portfolio website designed and developed over the last couple years.<br><br>Went through various revisions, the design below is one of the last ones. Built using semantic HTML5, CSS3, jQuery, & JavaScript. Fully responsive. No CMS was used.</p>
+                    <img src="./files/damirharaoldsitev2.png" />
             </div>
-            <div class="examples" id="damirUX">
-                    <h1>Test 2<br>---</h1>
-                    <p>Rynet Technologies is an IT consulting business. I designed and developed the entire one-page site based on clients needs and wants.<br><br>Technologies used: HTML5, CSS3, jQuery</p>
-                    <img src="./files/RynetTechnologies.png" />
+            <div class="examples" id="bcruz">
+                    <h1>Brandon Cruz Photography<br>---</h1>
+                    <p>Photography website for Brandon Cruz Photography. Initially designed and developed by a friend of mine at <a href="http://deoliveiradesign.com/">deoliveiradesign.com</a> and then redesigned by me.<br><br>Currently I take care of all the web administration and implementation with the client. Built on WordPress using HTML, CSS, jQuery, various plug-ins and PHP.</p>
+                    <img src="./files/bcruzphoto.png" />
+            </div>
+            <div class="examples" id="geekzombie">
+                    <h1>Geek Zombie<br>---</h1>
+                    <p>Web Dev class project. Handled the HTML, CSS, & jQuery based on a .PSD file.<br><br>This was a really fun project for me since it was the first time I got to dive into jQuery. The page is meant to act as a informational site and features a fun design.</p>
+                    <img src="./files/GeekZombie.png" />
             </div>
             <div class="examples" id="threerivers">
-                    <h1>Test 3<br>---</h1>
-                    <p>Rynet Technologies is an IT consulting business. I designed and developed the entire one-page site based on clients needs and wants.<br><br>Technologies used: HTML5, CSS3, jQuery</p>
-                    <img src="./files/RynetTechnologies.png" />
-            </div> -->
+                    <h1>Three Rivers<br>---</h1>
+                    <p>Web Dev class project. Handled the HTML5, CSS3, jQuery based on a style guide from the designer.<br><br>Project started with planning, brainstorming and sketching flexible grids as this was the first time I dove into Responsive Design. Super challenging but fun project.</p>
+                    <img src="./files/threeriversresponsive.png" />
+            </div>
         </section>    
     </article>
     
@@ -88,7 +75,9 @@
         <div id="foot-container">
             <p>&copy; 2014 Damir Harambasic.</p>
             <p class="madein"><img src="./files/Mountain_Icon.svg">&nbsp;&nbsp;Crafted in Utah.</p>
+            <div id="backtop"><a href="#top_content">^</a></div>
         </div>
+
     </footer>
 
 
