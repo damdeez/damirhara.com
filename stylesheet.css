@@ -37,12 +37,12 @@ article {
 #top_content {
     width: 100%;
     min-height: 1250px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
     #profile_pic {
         display: block;
-        width: 18%;
+        width: 16%;
         margin: 0px auto;
         border: 2px solid rgba(0, 0, 0, 0.08);
         padding: 4px;
@@ -56,9 +56,9 @@ article {
 
 #headline {
     font-family: "Pacifico", "Questrial", Verdana, sans-serif;
-    font-size: 7em;
+    font-size: 6.5em;
     color: rgb(210, 95, 80);
-    text-shadow: 1px 0px 0px rgb(210, 95, 80);;
+    text-shadow: 0px 0px 0px rgb(0,0,0);
     letter-spacing: -5px;
     text-align: center;
 }
@@ -66,7 +66,7 @@ article {
 #subtext {
     font-family: "Open Sans", "Comfortaa", Verdana, sans-serif;
     width: 60%;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 300;
     color: rgb(60, 60, 60);
     text-align: center;
@@ -240,19 +240,56 @@ footer {
     display: none;
 }
 
-#backtop a {
-    position: fixed;
-    bottom: 10px;
-    right: 48%;
-    width: 50px;
-    height: 40px;
-    margin: 0 auto;
+    #backtop a {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        height: 40px;
+        margin: 0 auto;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 12px;
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: #FFF;
+    }
+
+    #backtop a:hover {
+        opacity: 0.8;
+    }
+
+
+/***************
+*** 404 Page ***
+***************/
+
+#about404 {
+    margin-top: 10%;
+    text-decoration: none;
+    font-family: "Open Sans", Verdana, sans-serif;
     font-size: 20px;
-    text-align: center;
-    padding-top: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #FFF;
+    font-weight: 100;
+    letter-spacing: -1pt;
+    word-spacing: 2pt;
+    color: #0F0F0F; 
 }
+
+    #backhome {
+        width: 200px;
+        margin: 30px auto;
+    }
+
+    #backhome a {
+        border: 2px solid #0F0F0F;
+        padding: 10px 28px 10px 30px;
+        text-decoration: none;
+        color: #0F0F0F;
+    }
+
+    #backhome:hover {
+        opacity: 0.7;
+    }
 
 
 /********************
@@ -266,7 +303,7 @@ footer {
     }
 
     #subtext {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 }
 
@@ -286,6 +323,20 @@ footer {
         font-size: 3.8em;
         letter-spacing: 0px;
     }
+
+    #subtext {
+        width: 75%;
+    }
+
+    .examples p {
+        font-size: 1em;
+        width: 70%;
+    }
+
+    .examples img {
+        width: 80%;
+    }
+
 }
 
 @media screen and (max-width: 570px) {
@@ -299,6 +350,24 @@ footer {
     }
 
     #subtext {
-        font-size: 1em;
+        font-size: 1.1em;
+    }
+
+    #contact_button a {
+        padding: 10px 18px 10px 18px;
+        font-size: 14px;
+        width: 140px;
+    }
+
+    .examples h1 {
+        font-size: 2.5em;
+    }
+
+    #rynet, #damirhara, #bcruz, #geekzombie, #threerivers {
+        height: 900px;
+    }
+
+    #backtop a {
+        display: none;
     }
 }

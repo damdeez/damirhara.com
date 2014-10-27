@@ -24,9 +24,9 @@
 
         $(window).scroll(function() {
             if ($(this).scrollTop() > 1200) {
-                $("#backtop").fadeIn(1000);
+                $("#backtop").fadeIn(800);
             } else {
-                $("#backtop").fadeOut(1000);
+                $("#backtop").fadeOut(800);
             }
         });
 
@@ -36,7 +36,7 @@
         });
 
         setInterval(function() {
-        $("#arrowdown").toggleClass("animated bounce");
-        }, 2500);
+            $("#arrowdown").toggleClass("animated bounce");
+        }, 2000);
 
     });
