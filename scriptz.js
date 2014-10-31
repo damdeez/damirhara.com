@@ -6,7 +6,7 @@
 // Auto resize top_content section to fit users browser 
 
     function autoResizeSection() {
-        document.getElementById('top_content').style.height = window.innerHeight +'px';
+        document.getElementById("top").style.height = window.innerHeight +"px";
         }
         window.onresize = autoResizeSection;
             autoResizeSection();   
@@ -17,12 +17,12 @@
     $(document).ready(function() {
         $(".click").click(function() {
             var offset = "";
-            $('html, body').animate({
+            $("html, body").animate({
                 scrollTop: $("#portfolio").offset().top + offset}, 500);
 
         });
 
-        $(window).scroll(function() {
+        $(this).scroll(function() {
             if ($(this).scrollTop() > 1200) {
                 $("#backtop").fadeIn(800);
             } else {
