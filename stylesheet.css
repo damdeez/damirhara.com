@@ -93,23 +93,20 @@ article {
     padding: 12px 30px 12px 30px;
     font-family: "Open Sans", Verdana, sans-serif;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 500;
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(30, 30, 30, 0.5);
-    color: rgb(255, 255, 255);
-    background-color: rgb(210, 95, 80);
-    border-bottom: 4px solid rgb(190, 65, 50);
-    border-radius: 5px;
-    box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.1) inset;
+    border: 2px solid rgb(210, 95, 80);
+    color: rgb(210, 95, 80);
+    background-color: transparent;
     transition: .3s ease-in;
     -moz-transition: .3s ease-in;
     -o-transition: .3s ease-in;
 }
 
     #contact_button a:hover {
-        background-color: rgb(190, 65, 50);
-        box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.05) inset;
-        border-bottom: 4px solid rgb(180, 58, 43);
+        background-color: rgb(210, 95, 80);
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(200, 85, 70);
     }
 
 #seperator {
@@ -191,14 +188,14 @@ article {
         box-shadow: 0 0 6px #B0B0B0;
     }
 
-    #rynet {
-        height: 1200px;
+    #ku2 {
+        height: 1000px;
         overflow: hidden;
     }
 
-    #damirhara, #bcruz, #geekzombie, #threerivers {
+    #rynet, #damirhara, #bcruz, #geekzombie, #threerivers {
         margin-top: 80px;
-        height: 1200px;
+        height: 1000px;
         overflow: hidden;
     }
 
@@ -364,7 +361,7 @@ footer {
         font-size: 2.5em;
     }
 
-    #rynet, #damirhara, #bcruz, #geekzombie, #threerivers {
+    #rynet, #damirhara, #bcruz, #geekzombie, #threerivers, #ku2 {
         height: 900px;
     }
 
