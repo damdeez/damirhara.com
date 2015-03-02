@@ -1,10 +1,9 @@
 
 .icon-behance:before { content: '\e800'; } /* '' */
-.icon-github-circled:before { content: '\e801'; } /* '' */
 .icon-codepen:before { content: '\e802'; } /* '' */
 .icon-twitter:before { content: '\e803'; } /* '' */
-.icon-wordpress:before { content: '\e804'; } /* '' */
 .icon-linkedin:before { content: '\e805'; } /* '' */
 .icon-mail:before { content: '\e806'; } /* '' */
 .icon-github:before { content: '\e807'; } /* '' */
+.icon-music-note:before { content: '\e809'; } /* '' */
 .icon-facebook:before { content: '\f30c'; } /* '' */

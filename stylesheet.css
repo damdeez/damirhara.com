@@ -11,8 +11,6 @@
     background: transparent;
 }
 
-body {}
-
 a {
     text-decoration: none;
     list-style-type: none;
@@ -22,13 +20,7 @@ a {
     -o-transition: all .2s ease-in;
 }
 
-    a:hover {
-        
-    }
-
-article {
-    background-color: rgb(255, 255, 255);
-}
+article {background-color: rgb(255, 255, 255);}
 
 
 /***************
@@ -48,7 +40,10 @@ article {
         border: 2px solid rgba(0, 0, 0, 0.08);
         padding: 4px;
         border-radius: 50%;
-        border-radi
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
     }
 
 .center_content {
@@ -60,9 +55,14 @@ article {
     font-family: "Pacifico", "Questrial", Verdana, sans-serif;
     font-size: 6.5em;
     color: rgb(210, 95, 80);
+    height: 170px;
     text-shadow: 1px 1px 1px rgb(0,0,0,0.05) !important;
-    letter-spacing: -5px;
+    letter-spacing: -4px;
     text-align: center;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 #subtext {
@@ -70,7 +70,7 @@ article {
     width: 62%;
     font-size: 1.3em;
     font-weight: 300;
-    color: rgb(60, 60, 60);
+    color: #606060;
     text-align: center;
     letter-spacing: -0.5px;
     word-spacing: 1px;
@@ -111,8 +111,11 @@ article {
 
 #seperator {
     border: 3px dotted #d0d0d0;
-    width: 40%;
+    width: 35%;
     margin: 70px auto;
+    transition: .3s ease-in;
+    -moz-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
 }
 
 #social {
@@ -183,10 +186,13 @@ article {
         display: block;
         background-size: 100%;
         background-repeat: no-repeat;
-        width: 60%;
+        width: 50%;
         max-width: 900px;
         margin: 40px auto;
         box-shadow: 0 0 6px #B0B0B0;
+        transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
     }
 
     #ku2 {
@@ -244,6 +250,16 @@ footer {
             width: 30px;
         }
 
+#listening-to {
+    font-family: "Open Sans", Verdana, sans-serif;
+    color: #606060;
+    font-size: 1.0em;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    display: inline;
+}
+
 #backtop {
     -webkit-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
@@ -270,6 +286,31 @@ footer {
         opacity: 0.8;
     }
 
+.typed-cursor {
+    opacity: 1;
+    color: rgb(210, 95, 80);
+    display: inline-block;
+    padding: 0 6px;
+    font-family: Verdana, Georgia, Arial, sans-serif;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
 
 /***************
 *** 404 Page ***
@@ -323,7 +364,8 @@ footer {
 
 @media screen and (max-width: 1150px) {
     #headline {
-        font-size: 6.2em;
+        font-size: 5.6em;
+        height: 150px;
     }
 
     #subtext {
@@ -332,10 +374,11 @@ footer {
 }
 
 @media screen and (max-width: 920px) {
+    #profile_pic {width: 20%;}
     #headline { 
-        font-size: 5.2em;
+        font-size: 4.9em;
+        height: 130px;
     }
-
 }
 
 @media screen and (max-width: 780px) {
@@ -344,8 +387,9 @@ footer {
         }
 
     #headline {
-        font-size: 3.8em;
+        font-size: 3.1em;
         letter-spacing: 0px;
+        height: 80px;
     }
 
     #subtext {
@@ -364,21 +408,17 @@ footer {
     .examples img {
         width: 80%;
     }
-
 }
 
 @media screen and (max-width: 570px) {
-    #top {
-
-    }
-
     #headline {
-        font-size: 2.5em;
-        letter-spacing: -0.5px;
+        font-size: 2.0em;
+        letter-spacing: -1.5px;
+        height: 50px;
     }
 
     #subtext {
-        font-size: 1.1em;
+        font-size: 1.0em;
     }
 
     #contact_button a {
@@ -392,10 +432,17 @@ footer {
     }
 
     #rynet, #damirhara, #bcruz, #geekzombie, #threerivers, #ku2 {
-        height: 900px;
+        height: 800px;
     }
 
     #backtop a {
         display: none;
     }
 }
+
+@media screen and (max-width: 320px) {
+    #headline {
+        font-size: 1.7em;
+        letter-spacing: -1px;
+        height: 50px;
+    }

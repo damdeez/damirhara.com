@@ -19,10 +19,10 @@
       "src": "fontawesome"
     },
     {
-      "uid": "0f6a2573a7b6df911ed199bb63717e27",
-      "css": "github-circled",
-      "code": 59393,
-      "src": "fontawesome"
+      "uid": "fda731b5a4026685e1a9c7e64228e2b2",
+      "css": "music-note",
+      "code": 59401,
+      "src": "entypo"
     },
     {
       "uid": "bc50457410acf467b8b5721240768742",
@@ -35,12 +35,6 @@
       "css": "linkedin",
       "code": 59397,
       "src": "entypo"
-    },
-    {
-      "uid": "0636c283a9822288a767609062bbf4a4",
-      "css": "wordpress",
-      "code": 59396,
-      "src": "zocial"
     },
     {
       "uid": "155970c9f52b23f31026bab7163caa63",
