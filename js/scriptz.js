@@ -7,9 +7,9 @@
 autoResizeSection(); */
 
 // Auto resize #top section to fit users browser
-$(function() {
-    $("#top").height(window.innerHeight + "px");
-});
+$("#top").height(window.innerHeight + "px");
+
+document.getElementById("current-year").innerHTML = new Date().getFullYear();
 
 $(document).ready(function() {
     setInterval(function() {
@@ -63,5 +63,4 @@ $(document).ready(function() {
         });
         $("#listening-to").append(html);
     });
-    document.getElementById("current-year").innerHTML = new Date().getFullYear();
 });

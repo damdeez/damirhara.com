@@ -288,7 +288,7 @@ footer {
         text-align: center;
         padding-top: 12px;
         border-radius: 4px;
-        background: url("./files/arrowup.png") no-repeat center rgba(0, 0, 0, 0.2);
+        background: url("../files/arrowup.png") no-repeat center rgba(0, 0, 0, 0.2);
         background-size: 20px;
         color: #FFF;
     }
