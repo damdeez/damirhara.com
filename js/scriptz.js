@@ -52,12 +52,12 @@ $(document).ready(function() {
         $("html, body").animate({scrollTop: 0}, 500);
     });
     $.getJSON("//ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=f7c1211d729a780a97b6b279b82aaea6&limit=2&format=json&callback=?", function(data) {
-        var html = ""; // we declare the variable that we'll be using to store our information
-        var counter = 1; // we declare a counter variable to use with the if statement in order to limit the result to 1
+        var html = "";
+        var counter = 1; // a counter variable to use with the if statement in order to limit the result to 1
         $.each(data.recenttracks.track, function(i, item) {
             if(counter == 1) {
                 html += // "Most recently listened to: " + 
-                item.artist["#text"] + "</a> - " +"<span><a href='" + item.url + "' target='_blank'>" + item.name + "</span>";
+                item.artist["#text"] + " - " + "<span>" + item.name + "</span>";
             }
             counter++ // add 1 to the counter variable each time the each loop runs
         });

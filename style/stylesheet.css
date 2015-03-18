@@ -280,15 +280,15 @@ footer {
     #backtop a {
         position: fixed;
         top: 10px;
-        right: 10px;
-        width: 50px;
+        right: -15px;
+        width: 70px;
         height: 40px;
         margin: 0 auto;
         font-size: 20px;
         text-align: center;
-        padding-top: 12px;
+        padding: 12px 0 0 0;
         border-radius: 4px;
-        background: url("../files/arrowup.png") no-repeat center rgba(0, 0, 0, 0.2);
+        background: url("../files/arrowup.png") no-repeat 40% rgba(0, 0, 0, 0.2);
         background-size: 20px;
         color: #FFF;
     }
