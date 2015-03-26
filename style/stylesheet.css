@@ -204,19 +204,19 @@ body {background-color: #ffffff}
         .examples p a {font-weight: 500;}
         .examples p a:hover {border-bottom: 1px solid;}
 
-    .examples img {
-        display: block;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        width: 50%;
-        max-width: 900px;
-        margin: 40px auto;
-        box-shadow: 0 0 4px #B0B0B0;
-        -webkit-transition: all .5s ease-in-out;
-        -moz-transition: all .5s ease-in-out;
-        -o-transition: all .5s ease-in-out;
-        transition: all .5s ease-in-out;
-    }
+.example-imgs {
+    display: block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50%;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 0 4px #B0B0B0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
 
     #falselight, #ku2, #rynet, #damirhara, #bcruz, #geekzombie, #threerivers {
         height: 1000px;
@@ -458,6 +458,10 @@ footer {
     .typed-cursor {
     padding: 0 3px;
     }
+}
+
+@media screen and (max-width: 420px) {
+    .madein span {display: none;}
 }
 
 @media screen and (max-width: 320px) {

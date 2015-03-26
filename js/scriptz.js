@@ -25,6 +25,10 @@ $(document).ready(function() {
         });
     }, 1000);
 
+    $(".example-imgs").lazyload({
+        threshold: 300,
+        effect: "fadeIn"
+    });
     $(".click").click(function() {
         $("html, body").animate({
             scrollTop: $("#portfolio").offset().top}, 500);
