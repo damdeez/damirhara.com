@@ -16,19 +16,15 @@ $(document).ready(function() {
         $("#arrowdown").toggleClass("animated shake");
         $("#next-example").toggleClass("animated pulse");
     }, 2000);
-
     setTimeout(function() {
         $("#typed").typed({
-            strings: ["Damdeez.", "Dado.", "Damir."],
+            strings: ["Damir.", "Damdeez.", "Dado.", "Damir."],
             typeSpeed: 100,
-            backSpeed: 100
+            backSpeed: 100,
+            backDelay: 200
         });
     }, 1000);
-
-    $(".example-imgs").lazyload({
-        threshold: 300,
-        effect: "fadeIn"
-    });
+    $(".example-imgs").lazyload({threshold: 500});
     $(".click").click(function() {
         $("html, body").animate({
             scrollTop: $("#portfolio").offset().top}, 500);
@@ -41,7 +37,7 @@ $(document).ready(function() {
         if ($(this).scrollTop() > 1150) {
             $("#backtop").css("display", "inline");
             $(".example-imgs").css({
-                "box-shadow": "0 1px 7px #a0a0a0",
+                "box-shadow": "0 1px 7px #A0A0A0",
                 "width": "60%"
             });
         } else {
