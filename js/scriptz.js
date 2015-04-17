@@ -9,12 +9,13 @@ autoResizeSection(); */
 // Auto resize #top section to fit users browser
 $("#top").height(window.innerHeight + "px");
 
-document.getElementById("current-year").innerHTML = new Date().getFullYear();
+$("#current-year").html(new Date().getFullYear());
 
 $(document).ready(function() {
+    //$("#profile_pic").toggleClass("animated bounceInDown");
+    //$("#top").toggleClass("animated bounceInLeft");
     setInterval(function() {
-        $("#arrowdown").toggleClass("animated shake");
-        $("#next-example").toggleClass("animated pulse");
+        $("#arrowdown").toggleClass("animated bounce");
     }, 2000);
     setTimeout(function() {
         $("#typed").typed({
@@ -33,6 +34,11 @@ $(document).ready(function() {
     $("#profile_pic").on("click", function() {
         $("#about-site").slideToggle(500);
     });
+    $("#profile_pic").hover(
+        function() {
+            $(this).toggleClass("animated pulse");
+        }
+    );
     $(window).scroll(function() {
         if ($(this).scrollTop() > 1150) {
             $("#backtop").css("display", "inline");
