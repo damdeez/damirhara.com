@@ -8,53 +8,54 @@ autoResizeSection(); */
 
 // Auto resize #top section to fit users browser
 $("#top").height(window.innerHeight + "px");
-
+$("#backtop, #about-site").hide();
 $("#current-year").html(new Date().getFullYear());
 
 $(document).ready(function() {
-    //$("#profile_pic").toggleClass("animated bounceInDown");
-    //$("#top").toggleClass("animated bounceInLeft");
+    var profilePic = $("#profile_pic"),
+        backTop = $("#backtop"),
+        exampleImgs = $(".example-imgs")
+
     setInterval(function() {
         $("#arrowdown").toggleClass("animated bounce");
     }, 2000);
     setTimeout(function() {
         $("#typed").typed({
-            strings: ["Damir.", "Damdeez.", "Dado.", "Damir."],
+            strings: ["^1000 Damir.", "Damdeez.", "Dado.", "Damir."],
             typeSpeed: 100,
             backSpeed: 100,
             backDelay: 200
         });
     }, 1000);
-    $(".example-imgs").lazyload({threshold: 500});
+    exampleImgs.lazyload({threshold: 500});
     $(".click").click(function() {
         $("html, body").animate({
             scrollTop: $("#portfolio").offset().top}, 500);
     });
-    $("#backtop, #about-site").hide();
-    $("#profile_pic").on("click", function() {
+    profilePic.on("click", function() {
         $("#about-site").slideToggle(500);
     });
-    $("#profile_pic").hover(
+    profilePic.hover(
         function() {
             $(this).toggleClass("animated pulse");
         }
     );
     $(window).scroll(function() {
         if ($(this).scrollTop() > 1150) {
-            $("#backtop").css("display", "inline");
-            $(".example-imgs").css({
+            backTop.css("display", "inline");
+            exampleImgs.css({
                 "box-shadow": "0 1px 7px #A0A0A0",
                 "width": "60%"
             });
         } else {
-            $("#backtop").css("display", "none");
-            $(".example-imgs").css({
+            backTop.css("display", "none");
+            exampleImgs.css({
                 "box-shadow": "0 0 4px #B0B0B0",
                 "width": "55%"
             });
         }
     });
-    $("#backtop").click(function() {
+    backTop.click(function() {
         $("html, body").animate({scrollTop: 0}, 500);
     });
     $.getJSON("//ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=f7c1211d729a780a97b6b279b82aaea6&limit=2&format=json&callback=?", function(data) {
