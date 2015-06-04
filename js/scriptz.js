@@ -1,6 +1,6 @@
 // scriptz.js by @damdeez //
 
-/* var autoResizeSection = function() {
+/* function autoResizeSection() {
     document.getElementById("top").style.height = window.innerHeight + "px";
     }
     window.onresize = autoResizeSection;
@@ -40,33 +40,47 @@ $(document).ready(function() {
             $(this).toggleClass("animated pulse");
         }
     );
+
+    //Tell the back to top button when to appear based on up or down scrolling
+    var previousScroll = 0;
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 1150) {
+        var currentScroll = $(this).scrollTop();
+        if (currentScroll > previousScroll && currentScroll > 1200){
             backTop.css("display", "inline");
+        } else {
+            backTop.css("display", "none");
+        }
+        previousScroll = currentScroll
+    });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1250) {
             exampleImgs.css({
                 "box-shadow": "0 1px 7px #A0A0A0",
                 "width": "60%"
             });
         } else {
-            backTop.css("display", "none");
             exampleImgs.css({
                 "box-shadow": "0 0 4px #B0B0B0",
                 "width": "55%"
             });
         }
     });
+    
     backTop.click(function() {
         $("html, body").animate({scrollTop: 0}, 500);
     });
-    $.getJSON("//ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=f7c1211d729a780a97b6b279b82aaea6&limit=2&format=json&callback=?", function(data) {
-        var html = "";
-        var counter = 1; // a counter variable to use with the if statement in order to limit the result to 1
-        $.each(data.recenttracks.track, function(i, item) {
-            if(counter == 1) {
-                html += // "Most recently listened to: " + 
-                item.artist["#text"] + " - " + "<span>" + item.name + "</span>";
-            }
-            counter++ // add 1 to the counter variable each time the each loop runs
+
+    //Last.fm most recently listened to
+    $.getJSON("//ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=f7c1211d729a780a97b6b279b82aaea6&limit=2&format=json&callback=?", 
+        function(data) {
+            var html = "";
+            var counter = 1; // a counter variable to use with the if statement in order to limit the result to 1
+            $.each(data.recenttracks.track, function(i, item) {
+                if(counter == 1) {
+                    html += /* "Most recently listened to: " + */ item.artist["#text"] + " - " + "<span>" + item.name + "</span>";
+                }
+                counter++ // add 1 to the counter variable each time the each loop runs
         });
         $("#listening-to").append(html);
     });
