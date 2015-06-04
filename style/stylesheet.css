@@ -15,7 +15,7 @@
 a {
     text-decoration: none;
     list-style-type: none;
-    color: rgba(0, 0, 0, 1.0);
+    color: rgba(0, 0, 0, 1);
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
@@ -79,6 +79,7 @@ body {
 }
 .center_content {
     width: 100%;
+    max-width: 1200px;
     margin: 0px auto;
 }
 #headline {
@@ -182,6 +183,7 @@ body {
 }
 .examples p {
     width: 50%;
+    max-width: 1200px;
     font-size: 1.2em;
     margin: 20px auto;
     font-weight: 100;
@@ -201,10 +203,10 @@ body {
     max-width: 900px;
     margin: 40px auto;
     box-shadow: 0 0 4px #B0B0B0;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
 }
 #falselight, #ku2, #rynet, #damirhara, #bcruz, #geekzombie, #threerivers {
     height: 1000px;
@@ -310,13 +312,14 @@ footer p {
 ***************/
 
 #about404 {
-    width: 400px;
+    width: 450px;
     margin: 80px auto;
     text-align: center;
 }
 #about404 span {
+    color: rgb(210, 95, 80);
     font-family: "Pacifico", "Questrial", Verdana, sans-serif;
-    font-size: 68px;
+    font-size: 72px;
     word-spacing: 10px;
 }
 #about404 p {
@@ -341,8 +344,10 @@ footer p {
 }
 #backhome a:hover {
     color: #EFEFEF;
-    background-color: #111;
+    background-color: rgb(210, 95, 80);
+    border: 2px solid rgb(225, 110, 95);
 }
+
 /********************
 *** MEDIA QUERIES ***
 ********************/
