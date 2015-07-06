@@ -1,6 +1,8 @@
-newPortfolioSite
+Damirhara.com
 ================
 
-New portfolio site project for www.damirhara.com
+Personal website for my freelance work.
 
-Started by Damir H on Feb 27th 2014
+Current version is 2.1
+
+Started by Damir H. on Feb 27th 2014

@@ -10,16 +10,26 @@ $(function() {
         exampleImgs = $(".example-imgs")
 
     setInterval(function() {
-        $("#arrowdown").toggleClass("animated bounce");
+        $("#arrowdown a img").toggleClass("animated bounce");
     }, 2000);
     setTimeout(function() {
-        $("#typed").typed({
-            strings: ["^1000 Dado.","Damir."],
-            typeSpeed: 100,
-            backSpeed: 100,
-            backDelay: 200
+        $(".typed.first").typed({
+            strings: ["^500I like to"],
+            typeSpeed: 50,
+            cursorChar: "",
+            callback: function() {
+              showThis();
+            }
         });
-    }, 1000);
+        function showThis() {
+            $(".typed.second").typed({
+                strings: ["^200create experiences.", "make websites."],
+                typeSpeed: 50,
+                backSpeed: 100,
+                backDelay: 200
+            });
+        }
+    }, 500);
     exampleImgs.lazyload({threshold: 500});
     $(".click").click(function(e) {
         e.preventDefault();
@@ -63,7 +73,7 @@ $(function() {
         $("html, body").animate({scrollTop: 0}, 500);
     });
     //Last.fm most recently listened to
-    $.getJSON("//ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=f7c1211d729a780a97b6b279b82aaea6&limit=2&format=json&callback=?", 
+    $.getJSON("//ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=f7c1211d729a780a97b6b279b82aaea6&limit=2&format=json&callback=?",
         function(data) {
             var html = "";
             var counter = 1; // a counter variable to use with the if statement in order to limit the result to 1
@@ -71,7 +81,7 @@ $(function() {
                 if(counter == 1) {
                     html += /* "Most recently listened to: " + */ item.artist["#text"] + " - " + "<span>" + item.name + "</span>";
                 }
-                counter++ 
+                counter++
         });
         $("#listening-to").append(html);
     });
