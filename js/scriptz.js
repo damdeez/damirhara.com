@@ -14,16 +14,16 @@ $(function() {
     }, 2000);
     setTimeout(function() {
         $(".typed.first").typed({
-            strings: ["^500I like to"],
+            strings: ["^500&amp; I like to"],
             typeSpeed: 50,
             cursorChar: "",
             callback: function() {
-              showThis();
+              secondTyped();
             }
         });
-        function showThis() {
+        function secondTyped() {
             $(".typed.second").typed({
-                strings: ["^200create experiences.", "make websites."],
+                strings: ["^200craet", "^200create experiences.", "make websites."],
                 typeSpeed: 50,
                 backSpeed: 100,
                 backDelay: 200
@@ -33,10 +33,10 @@ $(function() {
     exampleImgs.lazyload({threshold: 500});
     $(".click").click(function(e) {
         e.preventDefault();
-        $("html, body").animate({
-            scrollTop: $("#portfolio").offset().top}, 500);
+        $("html, body").animate({scrollTop: $("#portfolio").offset().top}, 500);
     });
-    profilePic.on("click", function() {
+    profilePic.on("click", function(e) {
+        e.preventDefault();
         $("#about-site").slideToggle(500);
     });
     profilePic.hover(
