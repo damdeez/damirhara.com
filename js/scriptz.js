@@ -54,9 +54,8 @@ $(function() {
             backTop.css("display", "none");
         }
         previousScroll = currentScroll
-    });
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 1250) {
+
+        if ($(this).scrollTop() > 1100) {
             exampleImgs.css({
                 "box-shadow": "0 1px 7px #A0A0A0",
                 "width": "60%"

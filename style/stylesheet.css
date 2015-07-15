@@ -206,17 +206,13 @@ body {
     max-width: 900px;
     margin: 40px auto;
     box-shadow: 0 0 4px #B0B0B0;
-    -webkit-transition: all .7s ease-in-out;
-    -moz-transition: all .7s ease-in-out;
-    -o-transition: all .7s ease-in-out;
-    transition: all .7s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
 }
-.next-example img {
-    display: block;
-    padding: 40px 0 40px 0;
-    width: 50px;
-    margin: 0 auto;
-    opacity: .85;
+.example-imgs:hover {
+    margin-top: 5px;
 }
 footer {
     width: 100%;
