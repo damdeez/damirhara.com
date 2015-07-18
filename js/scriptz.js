@@ -33,7 +33,7 @@ $(function() {
     exampleImgs.lazyload({threshold: 500});
     $(".click").click(function(e) {
         e.preventDefault();
-        $("html, body").animate({scrollTop: $("#portfolio").offset().top}, 500);
+        $("html, body").animate({scrollTop: $("#current").offset().top}, 500);
     });
     profilePic.on("click", function(e) {
         e.preventDefault();
@@ -55,7 +55,7 @@ $(function() {
         }
         previousScroll = currentScroll
 
-        if ($(this).scrollTop() > 1100) {
+        if ($(this).scrollTop() > 1500) {
             exampleImgs.css({
                 "box-shadow": "0 1px 7px #A0A0A0",
                 "width": "60%"
