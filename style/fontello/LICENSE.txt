@@ -1,15 +1,6 @@
 Font license info
 
 
-## Font Awesome
-
-   Copyright (C) 2012 by Dave Gandy
-
-   Author:    Dave Gandy
-   License:   SIL ()
-   Homepage:  http://fortawesome.github.com/Font-Awesome/
-
-
 ## Entypo
 
    Copyright (C) 2012 by Daniel Bruce
@@ -19,21 +10,12 @@ Font license info
    Homepage:  http://www.entypo.com
 
 
-## Brandico
+## Font Awesome
 
-   (C) 2012 by Vitaly Puzrin
+   Copyright (C) 2012 by Dave Gandy
 
-   Author:    Crowdsourced, for Fontello project
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  
-
-
-## Elusive
-
-   Copyright (C) 2013 by Aristeides Stathopoulos
-
-   Author:    Aristeides Stathopoulos
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://aristeides.com/
+   Author:    Dave Gandy
+   License:   SIL ()
+   Homepage:  http://fortawesome.github.com/Font-Awesome/
 
 

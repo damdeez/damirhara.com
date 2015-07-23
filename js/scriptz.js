@@ -4,6 +4,7 @@
 $("#top").height(window.innerHeight + "px");
 $("#backtop, #about-site").hide();
 $("#current-year").html(new Date().getFullYear());
+
 $(function() {
     var profilePic = $("#profile_pic"),
         backTop = $("#backtop"),
@@ -49,9 +50,9 @@ $(function() {
     $(window).scroll(function() {
         var currentScroll = $(this).scrollTop();
         if (currentScroll > previousScroll && currentScroll > 1200){
-            backTop.css("display", "inline");
+            backTop.fadeIn(300).css("display", "inline");
         } else {
-            backTop.css("display", "none");
+            backTop.fadeOut(300);
         }
         previousScroll = currentScroll
 

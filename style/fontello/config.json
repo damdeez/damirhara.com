@@ -13,52 +13,10 @@
       "src": "fontawesome"
     },
     {
-      "uid": "aa58e30c7196b1378a6ca78c025cc3b5",
-      "css": "behance",
-      "code": 59392,
-      "src": "fontawesome"
-    },
-    {
-      "uid": "fda731b5a4026685e1a9c7e64228e2b2",
-      "css": "music-note",
-      "code": 59401,
-      "src": "entypo"
-    },
-    {
-      "uid": "bc50457410acf467b8b5721240768742",
-      "css": "facebook",
-      "code": 62220,
-      "src": "entypo"
-    },
-    {
-      "uid": "7132e1233bc16cd1b6efe7e29d3613a5",
-      "css": "linkedin",
-      "code": 59397,
-      "src": "entypo"
-    },
-    {
       "uid": "067edf3e1f6458e782d0254e63eb5eb6",
       "css": "spotify",
       "code": 59393,
       "src": "entypo"
-    },
-    {
-      "uid": "155970c9f52b23f31026bab7163caa63",
-      "css": "codepen",
-      "code": 59394,
-      "src": "brandico"
-    },
-    {
-      "uid": "aa18911cd641967c899c575aeb80cd7e",
-      "css": "github",
-      "code": 59399,
-      "src": "elusive"
-    },
-    {
-      "uid": "26969cfbd811730075e4c657cc9fda2a",
-      "css": "twitter",
-      "code": 59395,
-      "src": "elusive"
     }
   ]
 }

@@ -32,7 +32,7 @@ body {
 #top {
   width: 100%;
   min-height: 1000px;
-  padding-top: 90px;
+  padding-top: 80px;
   background: url("../files/mac-bckgrnd.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed; }
@@ -55,7 +55,7 @@ body {
 
 #about-site {
   display: none;
-  width: 37%;
+  width: 39%;
   margin: 10px auto;
   background-color: #fefefe;
   border-radius: 5px;
@@ -84,7 +84,7 @@ body {
   margin: 0px auto; }
 
 #headline {
-  margin-top: 75px;
+  margin-top: 70px;
   font-family: "Montserrat", Helvetica, "Questrial", Verdana, sans-serif;
   font-size: 4em;
   color: #fefefe;
@@ -130,10 +130,10 @@ body {
   color: #fefefe;
   background-color: transparent;
   border-radius: 3px;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out; }
+  -webkit-transition: all 0.5s cubic-bezier(0.43, -1.99, 0.43, 1.99);
+  -moz-transition: all 0.5s cubic-bezier(0.43, -1.99, 0.43, 1.99);
+  -o-transition: all 0.5s cubic-bezier(0.43, -1.99, 0.43, 1.99);
+  transition: all 0.5s cubic-bezier(0.43, -1.99, 0.43, 1.99); }
   #contact_button a:hover {
     background-color: #d25f50;
     color: white;
@@ -165,14 +165,17 @@ body {
   height: 100%; }
   #current .current-cont {
     margin: 0 auto;
-    padding: 300px 0;
-    width: 50%; }
+    padding: 200px 0;
+    width: 50%;
+    text-align: center; }
+    #current .current-cont .svg-img {
+      width: 150px;
+      margin: 0 0 40px; }
     #current .current-cont p {
       font-family: "Open Sans", Helvetica, Verdana, sans-serif;
       font-size: 1.2em;
       font-weight: 100;
       color: #474747;
-      text-align: center;
       line-height: 35px; }
       #current .current-cont p .email-link {
         font-weight: 700; }
