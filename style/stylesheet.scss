@@ -219,11 +219,9 @@ body {
   height: 1000px;
   overflow: hidden;
 }
-
 .everyother {
   background-color: #f5f5f5;
 }
-
 .examples {
   h3 {
     font-family: "Roboto", Verdana, sans-serif;
@@ -462,6 +460,7 @@ footer {
     }
   }
   .examples {
+    height: 800px;
     p {
       font-size: 1em;
       width: 70%;

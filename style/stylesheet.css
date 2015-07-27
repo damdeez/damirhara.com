@@ -381,11 +381,13 @@ footer {
     #current .current-cont p {
       font-size: 1em; }
 
-  .examples p {
-    font-size: 1em;
-    width: 70%; }
-  .examples img {
-    width: 80%; } }
+  .examples {
+    height: 800px; }
+    .examples p {
+      font-size: 1em;
+      width: 70%; }
+    .examples img {
+      width: 80%; } }
 @media screen and (max-width: 719px) {
   #listening-to {
     display: none; } }
