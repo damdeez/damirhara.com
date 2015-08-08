@@ -65,7 +65,8 @@ body {
 #about-site {
   display: none;
   width: 39%;
-  margin: 10px auto;
+  max-width: 600px;
+  margin: 15px auto;
   background-color: #fefefe;
   border-radius: 5px;
   font-size: 0.8em;
@@ -76,18 +77,15 @@ body {
   a:hover {
     text-decoration: underline;
   }
-}
-
-#about-arrow {
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 15px solid #fefefe;
-  margin: 0 auto;
-  position: relative;
-  top: -8px;
-  display: block;
+  .svg-arrow {
+    fill: #fefefe;
+    position: relative;
+    top: -8px;
+    display: block;
+    width: 40px;
+    height: 15px;
+    margin: 0 auto;
+  }
 }
 
 .center_content {
