@@ -8,7 +8,9 @@ $("#current-year").html(new Date().getFullYear());
 $(function() {
     var profilePic = $("#profile_pic"),
         backTop = $("#backtop"),
-        exampleImgs = $(".example-imgs")
+        exampleImgs = $(".example-imgs"),
+        htmlBody = $("html, body"),
+        $this = $(this)
 
     setInterval(function() {
         $("#arrowdown a img").toggleClass("animated bounce");
@@ -32,7 +34,7 @@ $(function() {
     exampleImgs.lazyload({threshold: 500});
     $(".click").click(function(e) {
         e.preventDefault();
-        $("html, body").animate({scrollTop: $("#current").offset().top}, 500);
+        htmlBody.animate({scrollTop: $("#current").offset().top}, 500);
     });
     profilePic.on("click", function(e) {
         e.preventDefault();
@@ -40,13 +42,13 @@ $(function() {
     });
     profilePic.hover(
         function() {
-            $(this).toggleClass("animated pulse");
+            $this.toggleClass("animated pulse");
         }
     );
     //Tell the back to top button when to appear based on up or down scrolling
     var previousScroll = 0;
     $(window).scroll(function() {
-        var currentScroll = $(this).scrollTop();
+        var currentScroll = $this.scrollTop();
         if (currentScroll > previousScroll && currentScroll > 1200){
             backTop.fadeIn(300).css("display", "inline");
         } else {
@@ -54,7 +56,7 @@ $(function() {
         }
         previousScroll = currentScroll
 
-        if ($(this).scrollTop() > 1500) {
+        if ($this.scrollTop() > 1500) {
             exampleImgs.css({
                 "box-shadow": "0 1px 7px #A0A0A0",
                 "width": "60%"
@@ -68,7 +70,7 @@ $(function() {
     });
     backTop.click(function(e) {
         e.preventDefault();
-        $("html, body").animate({scrollTop: 0}, 500);
+        htmlBody.animate({scrollTop: 0}, 500);
     });
     //Last.fm most recently listened to
     $.getJSON("//ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=f7c1211d729a780a97b6b279b82aaea6&limit=2&format=json&callback=?",
