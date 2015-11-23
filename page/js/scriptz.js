@@ -17,7 +17,7 @@ $(function() {
     }, 2000);
     setTimeout(function() {
         $(".typed.first").typed({
-            strings: ["^500&amp; I like to"],
+            strings: ["^500 I like to"],
             typeSpeed: 50,
             cursorChar: "",
             callback: function () {
