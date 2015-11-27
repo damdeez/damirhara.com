@@ -1,5 +1,4 @@
 // scriptz.js by @damdeez //
-
 $(function() {
     var profilePic = $("#profile_pic"),
         backTop = $("#backtop"),
@@ -13,7 +12,7 @@ $(function() {
     $("#current-year").html(new Date().getFullYear());
 
     setInterval(function() {
-        $("#arrowdown a img").toggleClass("animated bounce");
+        $("#arrowdown-img").toggleClass("animated bounce");
     }, 2000);
     setTimeout(function() {
         $(".typed.first").typed({
@@ -32,11 +31,11 @@ $(function() {
     }, 500);
     exampleImgs.lazyload({threshold: 500});
     $(".click").click(function(e) {
-        e.preventDefault();
+        e.preventDefault(e);
         htmlBody.animate({scrollTop: $("#current").offset().top}, 500);
     });
     profilePic.on("click", function(e) {
-        e.preventDefault();
+        e.preventDefault(e);
         $("#about-site").slideToggle(500);
     });
     profilePic.hover(
