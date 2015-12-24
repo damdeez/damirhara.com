@@ -1,16 +1,15 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
-var minifyCSS = require('gulp-minify-css');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
+var rename = require("gulp-rename");
 
 // Development Tasks
 // -----------------
@@ -49,8 +48,6 @@ gulp.task('useref', function() {
 
   return gulp.src('page/*.html')
     .pipe(assets)
-    // Minifies only if it's a CSS file
-    .pipe(gulpIf('*.css', minifyCSS()))
     // Uglifies only if it's a Javascript file
     .pipe(gulpIf('*.js', uglify()))
     .pipe(assets.restore())
@@ -95,7 +92,7 @@ gulp.task('default', function(callback) {
 
 gulp.task('build', function(callback) {
   runSequence('clean:dist',
-    ['sass', 'useref', 'images', 'fonts'],
+    ['sass', 'useref', 'images'],
     callback
   )
 })

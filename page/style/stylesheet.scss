@@ -24,12 +24,22 @@ a {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 #dh-container {
   min-width: 320px;
 }
+
+/*****************/
+/*** VARIABLES ***/
+/***************/
+
+$white: #ffffff;
+$off-white: #fefefe;
+$orange-red: rgb(210, 95, 80);
+$gray: #474747;
+$dark: #3e3e3e;
 
 /*****************/
 /*** MAIN CSS ***/
@@ -49,7 +59,7 @@ body {
   width: 16%;
   max-width: 350px;
   margin: 0px auto;
-  border: 2px solid #fefefe;
+  border: 2px solid $off-white;
   padding: 4px;
   border-radius: 50%;
   cursor: pointer;
@@ -67,7 +77,7 @@ body {
   width: 39%;
   max-width: 600px;
   margin: 15px auto;
-  background-color: #fefefe;
+  background-color: $off-white;
   border-radius: 5px;
   font-size: 0.8em;
   font-family: "Open Sans", Helvetica, Verdana, sans-serif;
@@ -78,7 +88,7 @@ body {
     text-decoration: underline;
   }
   .svg-arrow {
-    fill: #fefefe;
+    fill: $off-white;
     position: relative;
     top: -8px;
     display: block;
@@ -98,7 +108,7 @@ body {
   margin-top: 70px;
   font-family: "Montserrat", Helvetica, "Questrial", Verdana, sans-serif;
   font-size: 4em;
-  color: #fefefe;
+  color: $off-white;
   height: 170px;
   letter-spacing: -4px;
   text-align: center;
@@ -114,16 +124,16 @@ body {
   width: 62%;
   font-size: 1.2em;
   font-weight: 300;
-  color: #fefefe;
+  color: $off-white;
   text-align: center;
   letter-spacing: -0.5px;
   word-spacing: 1px;
   a {
     font-weight: 700;
-    color: rgb(210, 95, 80);
+    color: $orange-red;
     &:hover {
       color: #efefef;
-      background-color: rgb(210, 95, 80);
+      background-color: $orange-red;
       -webkit-transition: height .5s ease-in-out;
       -moz-transition: height .5s ease-in-out;
       -o-transition: height .5s ease-in-out;
@@ -141,8 +151,8 @@ body {
   font-size: 1em;
   font-weight: 500;
   text-align: center;
-  border: 2px solid #fefefe;
-  color: #fefefe;
+  border: 2px solid $off-white;
+  color: $off-white;
   background-color: transparent;
   border-radius: 3px;
   -webkit-transition: all .5s cubic-bezier(0.43, -1.99, 0.43, 1.99);
@@ -150,8 +160,8 @@ body {
   -o-transition: all .5s cubic-bezier(0.43, -1.99, 0.43, 1.99);
   transition: all .5s cubic-bezier(0.43, -1.99, 0.43, 1.99);
   &:hover {
-    background-color: rgb(210, 95, 80);
-    color: rgb(255, 255, 255);
+    background-color: $orange-red;
+    color: $white;
     border: 2px solid rgb(200, 85, 70);
     padding: 12px 15px;
     border-radius: 5px;
@@ -163,7 +173,7 @@ body {
   margin: 90px auto;
   text-align: center;
   a {
-    color: #fefefe;
+    color: $off-white;
     font-family: "Open Sans", Helvetica, Verdana, sans-serif;
     font-weight: 300;
     font-size: 0.8em;
@@ -196,7 +206,7 @@ body {
       font-family: "Open Sans", Helvetica, Verdana, sans-serif;
       font-size: 1.2em;
       font-weight: 100;
-      color: #474747;
+      color: $gray;
       line-height: 35px;
       .email-link {
         font-weight: 700;
@@ -212,8 +222,8 @@ body {
   }
 }
 .examples {
-  color: #474747;
-  background-color: #fefefe;
+  color: $gray;
+  background-color: $off-white;
   height: 1000px;
   overflow: hidden;
 }
@@ -227,6 +237,7 @@ body {
     font-weight: 600;
     text-align: center;
     padding-top: 70px;
+    color: $dark;
   }
   p {
     width: 50%;
@@ -306,7 +317,7 @@ footer {
   font-size: 20px;
   text-align: center;
   padding: 12px 0 0 0;
-  background: url("../files/arrowup.png") no-repeat 50% #555;
+  background: url("../files/arrowup.png") no-repeat 50% $gray;
   background-size: 20px;
   color: #fff;
   -webkit-transition: all .3s ease-out;
@@ -320,7 +331,7 @@ footer {
 
 .typed-cursor {
   opacity: 1;
-  color: #fefefe;
+  color: $off-white;
   display: inline-block;
   padding: 0 6px;
   font-weight: 100;
@@ -384,7 +395,7 @@ footer {
   margin: 80px auto;
   text-align: center;
   span {
-    color: rgb(210, 95, 80);
+    color: $orange-red;
     font-family: "Montserrat", "Questrial", Verdana, sans-serif;
     font-size: 72px;
     word-spacing: 10px;
@@ -410,8 +421,8 @@ footer {
     color: #0F0F0F;
     font-family: "Open Sans", Helvetica, Verdana, sans-serif;
     &:hover {
-      color: #fefefe;
-      background-color: rgb(210, 95, 80);
+      color: $off-white;
+      background-color: $orange-red;
       border: 2px solid rgb(225, 110, 95);
     }
   }
