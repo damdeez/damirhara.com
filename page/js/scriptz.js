@@ -83,3 +83,4 @@ $(function() {
         $("#listening-to").append(html);
     });
 });
+new WOW().init();
