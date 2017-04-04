@@ -9,6 +9,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "create": "mkdir dist && cd dist && mkdir js && mkdir css && echo 'dist folder has been created!'",
     "minify:js": "echo '=> minify:js' && uglifyjs src/js/scriptz.js -o dist/js/scriptz.min.js",
     "minify:css": "echo '=> minify:css' && cleancss src/css/stylesheet.css -o dist/css/stylesheet.min.css",
     "build": "echo '=> building' && npm run minify:js -s && npm run minify:css -s && cp index.html dist/ && echo 'COMPLETED!'"
