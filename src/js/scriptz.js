@@ -69,7 +69,7 @@ $(function() {
         htmlBody.animate({scrollTop: 0}, 500);
     });
     //Last.fm most recently listened to
-    $.getJSON("//ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=f7c1211d729a780a97b6b279b82aaea6&limit=2&format=json&callback=?", function(data) {
+    $.getJSON("//ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=<API_KEY>&limit=2&format=json&callback=?", function(data) {
             var html = "";
             var counter = 1; // a counter variable to use with the if statement in order to limit the result to 1
             $.each(data.recenttracks.track, function(i, item) {
